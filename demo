@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>demo</title>
+		<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.clear:after {            
+    		content: '';
+    		display: block;
+    		height: 0;
+    		clear: both;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul{
+			list-style-type: none;
+		}
+		.header-top {
+    		height: 35px;
+    		line-height: 35px;
+   			border-bottom: 1px solid rgba(218, 218, 218, 1);
+		}
+		.container{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.header-infor{
+			float: right;
+		}
+		.header-infor li{
+			margin-right: 25px;
+			float: left;
+		}
+		.header-infor a{
+			font-size:  10px;
+			font-weight: 300;
+			color: rgba(0, 0, 0, 1);
+		}
+		.header-bottom {
+   			height: 100px;
+		}
+		.logo1 {
+    		margin-top:14px;
+    		float: left;
+		}
+		.nav {
+   	 		float: left;
+    		margin-top: 30px;
+		}
+		.nav li{
+			width: 100px;
+			height: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			font-weight: bold;
+		}
+		.nav a {
+    		color: rgba(0, 0, 0, 1);
+		}
+		.form {
+    		float: right;
+    		margin-top: 30px;
+		}
+		.search {
+    		float: left;
+    		width: 150px;
+    		padding: 9px;
+    		border: 1px solid rgba(0, 0, 0, 1);
+		}
+		.submit {
+    		float: left;
+    		width: 36px;
+    		height: 36px;
+    		border: 1px solid rgba(0, 0, 0, 1);
+    		background: black url(image/search.png) no-repeat center center;
+		}
+		.banner {
+    		height: 550px;
+    		position: relative;
+		}
+
+		.banner li {
+    		width: 100%;
+    		height: 500px;
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+		}
+		.banner-one {
+    		background: url(image/banner.jpg) no-repeat center center;
+		}
+
+		.banner-two {
+    		background: url(image/banner1.jpg) no-repeat center center;
+    		display: none;
+		}
+
+		.prev,.next {
+    		width: 106px;
+    		height: 106px;
+    		position: absolute;
+		    top: 220px;
+		    left: 8%;
+		}
+		.next {
+    		left: auto;
+    		right: 8%;
+		}
+		.body{
+			height: 950px;
+		}
+		.body li{
+			position: relative;
+		}
+		.body img {
+    		vertical-align: bottom;
+		}
+
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+			width: 400px;
+			padding-top: 41px;
+		}
+		.duanxiu{
+			padding-top: 180px;
+		}
+		.foot {
+   			height: 100px;
+    		background: rgba(58, 58, 58, 0.8);
+    		text-align: center;
+		}
+		.foot p{
+			font-size: 10px;
+			font-weight: bolder;
+			color: white;
+			line-height: 100px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-top">
+				<div class="container clear">
+					<ul class="header-infor clear">
+						<li><a href="#">登录</a></li>
+						<LI><a href="#">注册</a></LI>
+						<li><a href="#">移动客户端</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-bottom container clear">
+				<img src="image/logo.png" class="logo1">
+				<ul class="nav clear">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">限时清仓</a></li>
+					<li><a href="#">6.18活动</a></li>
+						
+					<li><a href="#">服饰专区</a></li>
+						
+					<li><a href="#">家居用品</a></li>
+				</ul>
+				<form class="form clear">
+                	<input type="text" placeholder="6.18活动限时秒杀" class="search" />
+                	<input type="button" class="submit" />
+            	</form>
+			</div>
+		</div>
+		<div class="banner">
+        	<ul>
+            	<li class="banner-one"></li>
+            	<li class="banner-two"></li>
+        	</ul>
+        	<img src="image/prev.png" alt="上一页" class="prev" />
+       		<img src="image/next.png" alt="下一页" class="next" />
+    	</div>
+		<div class="body container">
+			<ul class="left">
+				<li class="picture">
+					<img src="image/连衣裙.jpg">
+				</li>
+			</ul>
+			<ul class="right">
+				<li class="picture">
+					<img src="image/连衣裙1.jpg">
+				</li>
+				<li class="picture duanxiu">
+					<img src="image/短袖2.jpg">
+				</li>
+			</ul>
+		</div>
+		<div class="foot">
+			<p>© 2005-2016 1688 版权所有，并保留所有权利。</p>
+			
+		</div>
+	</body>
+</html>
